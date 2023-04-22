@@ -1,15 +1,29 @@
 
-// get random elment from array.
+// get random elment from array for computer choice 
+// get from stackoverflow -.0
 
+/**
+ * game rule 
+ * 
+ * rock & paper & scissors
+ *
+ * * rock beats scissors but losts to paper 
+ * * paper beats rock but losts to scissors 
+ * * scissors beats paper but losts to rock 
+ * 
+ * * in one game, says 3 round, one who get more score point will wins
+ * ? userScore and computerScore.
+ * 
+ * * userinput and computerInput
+ * ? userInput <- prompt, computerInput <- from function
+ * 
+ */
 
 function getComputerChoice() {
     const choices = ["rock", "paper", "scissors"];
     const randomChoice = Math.floor(Math.random() * choices.length);
     return choices[randomChoice];
 }
-
-// console.log(playerSelection);
-// console.log(computerSelection);
 
 let playerScore = 0;
 let computerScore = 0;
